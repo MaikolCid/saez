@@ -1,0 +1,50 @@
+// El título será <h1> y el subtítulo un <p>. Para el título tendremos el color
+// #110615 con fondo #FBFBF2 con una opacidad al 70%. Para el subtítulo el
+// color #FBFBF2 con fondo #BCA7E8 al 60% de opacidad.
+// ● La imagen deberá ocupar todo el ancho del carrousel.
+@import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+//Carrusel
+$h1_color: #110615;
+$h1_fondo: #FBFBF2;
+$sub_color:#FBFBF2;
+$sub_fondo: #BCA7E8;
+
+//Menu
+$menu_fondo: #68205E;
+
+
+//Main
+$contenido_fondo1: #D6B5F0;
+$contenido_fondo2: #FBFBF2;
+
+//Footer
+$footer_fondo: #BCA7E8;
+$footer_letra: #FBFBF2;
+$footer_peso: 400;
+
+
+//Fuentes
+$fuente_Sunflower: 'Sunflower';
+$fuente_Work:'Work sans';
+$letra_peso: 200;
+$letra_tamano: 1rem;
+$letra_color_general:#110615;
+
+$h2_color: #68205E;
+$h3_color: #7D53DE;
+
+//Caracteristicas de titulos (textos)
+@mixin titulo($nivel) {
+    @if ($nivel == "h1") {
+      font-weight: 500;
+      font-size: calc($letra_tamano * 2); /* el doble  mayor  o un 100%* //  Cuando es 200% es * 4*/
+    } @else if ($nivel == "h2") {
+      font-weight: 600;
+      font-size: calc($letra_tamano * 2); /* 2 veces */
+    } @else if ($nivel == "h3") {
+      font-weight: 400;
+      font-size: calc($letra_tamano * 1.5); /* 1.50 mayor */
+    }
+  }

@@ -1,0 +1,164 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sunflower:wght@300&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import "animate.css";
+@import url("https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sunflower:wght@300&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,700");
+.container-fluid,
+.row {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+/* "." = clase
+"#" = identificador */
+.carousel-caption h1 {
+  color: #110615;
+  background-color: #FBFBF2;
+  opacity: 70%;
+}
+.carousel-caption p {
+  color: #FBFBF2;
+  background-color: #BCA7E8;
+  opacity: 60%;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+}
+
+.navbar {
+  background-color: #68205E !important;
+}
+
+.color1 {
+  background-color: #D6B5F0;
+}
+
+.color2 {
+  background-color: #FBFBF2;
+}
+
+body {
+  font-family: "Work sans";
+  font-size: 1rem;
+  font-weight: 200;
+}
+body h1 {
+  color: #110615;
+  font-weight: 500;
+  font-size: 2rem; /* el doble  mayor  o un 100%* //  Cuando es 200% es * 4*/
+  font-family: "Sunflower";
+  /*     font-weight: 500;
+      font-size: calc($letra_tamano * 2); /* el doble  mayor */
+}
+body h2 {
+  color: #68205E;
+  font-weight: 600;
+  font-size: 2rem; /* 2 veces */
+  /*  font-weight: 600;
+   font-size: calc($letra_tamano * 2); */
+}
+body h3 {
+  color: #7D53DE;
+  font-weight: 400;
+  font-size: 1.5rem; /* 1.50 mayor */
+  /*   font-weight: 400;
+    font-size: calc($letra_tamano * 1.5); */
+}
+
+footer {
+  font-size: 400;
+  color: #FBFBF2;
+  background-color: #BCA7E8;
+}
+footer ol li a {
+  color: #FBFBF2;
+  text-decoration: none !important;
+}
+
+/* 
+.col- (extra small devices - screen width less than 576px)
+.col-sm- (small devices - screen width equal to or greater than 576px)
+.col-md- (medium devices - screen width equal to or greater than 768px)
+.col-lg- (large devices - screen width equal to or greater than 992px)
+.col-xl- (xlarge devices - screen width equal to or greater than 1200px)
+
+ */
+@media screen and (max-width: 575px) {
+  /* xs  extra pequeño*/
+  #principal p {
+    text-align: justify;
+  }
+  #principal img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 576px) {
+  /* sm movil */
+  #principal p {
+    text-align: justify;
+  }
+  #principal img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* md tablet*/
+  #principal p {
+    text-align: left;
+  }
+  #principal img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 992px) {
+  /* lg escritorio*/
+  #principal p {
+    text-align: center;
+  }
+  #principal h2 {
+    text-align: center;
+  }
+  #principal img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* xl */
+}
+@keyframes correIzquierda {
+  from {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+@keyframes correDerecha {
+  from {
+    opacity: 0;
+    transform: translateX(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+#principal img {
+  animation-name: correIzquierda;
+  animation-duration: 3s;
+}
+#principal h2,
+#principal p {
+  animation-name: correDerecha;
+  animation-duration: 3s;
+}/*# sourceMappingURL=custom.css.map */

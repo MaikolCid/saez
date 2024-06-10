@@ -1,0 +1,196 @@
+@import "_variables.scss";
+@import "animate.css";
+@import url("https://fonts.googleapis.com/css2?family=Sunflower:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sunflower:wght@300&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,700");
+//Evitar margenes
+.container-fluid,
+.row {
+  padding: 0;
+  margin: 0;
+}
+//Todas las imagenes ocupan el 100%
+img {
+  width: 100%;
+}
+/* "." = clase
+"#" = identificador */
+
+.carousel-caption {
+  h1 {
+    color: $h1_color;
+    background-color: $h1_fondo;
+    opacity: 70%;
+  }
+  p {
+    color: $sub_color;
+    background-color: $sub_fondo;
+    opacity: 60%;
+  }
+}
+//Ocupa el 100% y la altura auto para no deformar la imagen
+.carousel {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+//Menu
+.navbar {
+  background-color: $menu_fondo !important; //magia pa que me haga caso
+}
+//Color de fondo del contenido
+.color1 {
+  background-color: $contenido_fondo1;
+}
+.color2 {
+  background-color: $contenido_fondo2;
+}
+
+//Body
+body {
+  font-family: $fuente_Work;
+  font-size: $letra_tamano;
+  font-weight: $letra_peso;
+
+  h1 {
+    color: $h1_color;
+    @include titulo("h1");
+    font-family: $fuente_Sunflower;
+/*     font-weight: 500;
+    font-size: calc($letra_tamano * 2); /* el doble  mayor */ 
+  }
+
+  h2 {
+    color: $h2_color;
+    @include titulo("h2");
+   /*  font-weight: 600;
+    font-size: calc($letra_tamano * 2); */
+  }
+
+  h3 {
+    color: $h3_color;
+    @include titulo("h3");
+  /*   font-weight: 400;
+    font-size: calc($letra_tamano * 1.5); */
+  }
+}
+//footer
+
+footer {
+  font-size: $footer_peso;
+  color: $footer_letra;
+  background-color: $footer_fondo;
+  ol {
+    li {
+      a {
+        color: $footer_letra;
+        text-decoration: none !important;
+      }
+    }
+  }
+}
+
+//Estilos para distintos dispositivos
+/* 
+.col- (extra small devices - screen width less than 576px)
+.col-sm- (small devices - screen width equal to or greater than 576px)
+.col-md- (medium devices - screen width equal to or greater than 768px)
+.col-lg- (large devices - screen width equal to or greater than 992px)
+.col-xl- (xlarge devices - screen width equal to or greater than 1200px)
+
+ */
+
+@media screen and (max-width: 575px) {
+  /* xs  extra pequeño*/
+  #principal {
+    p {
+      text-align: justify;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
+@media screen and (min-width: 576px) {
+  /* sm movil */
+  #principal {
+    p {
+      text-align: justify;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
+@media screen and (min-width: 768px) {
+  /* md tablet*/
+  #principal {
+    p {
+      text-align: left;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
+@media screen and (min-width: 992px) {
+  /* lg escritorio*/
+  #principal {
+    p {
+      text-align: center;
+    }
+    h2 {
+      text-align: center;
+    }
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  /* xl */
+}
+
+//ANIMACIONES
+// Derecha para las imágenes
+// Izquierda para el contenido cambiando
+// opacidad de 0 a 1
+// La duración será de 3s
+// y la función de tiempo --> curva de bezier “cubic-bezier(0.250, 0.460,0.450, 0.940)”
+
+@keyframes correIzquierda {
+  from {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes correDerecha {
+  from {
+    opacity: 0;
+    transform: translateX(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+#principal {
+  img {
+    animation-name: correIzquierda;
+    animation-duration: 3s;
+  }
+  h2,
+  p {
+    animation-name: correDerecha;
+    animation-duration: 3s;
+  }
+}

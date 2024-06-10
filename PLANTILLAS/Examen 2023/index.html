@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dolce Vita</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
+  <!-- Enlace a animate.css para hacer animaciones-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!--enlace con CSS  -->
+  <link rel="stylesheet" href="custom.css" />
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <div class="container-fluid"> <!--Container para que se peque al margen-->
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top"> <!--Menu fijado arriba-->
+      <!-- Brand/logo -->
+      <a class="navbar-brand d-none d-lg-block" href="#"> <!--Para que el logo solo se vea en el tamaño escritorio-->
+        <img src="img/logo.png" alt="logo" style="width: 40px" /> <!--Imagen del logo-->
+      </a>
+      <!-- Toggler/collapsibe Button -->
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"> <!--Boton para que colapse-->
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Links -->
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#Platos">Platos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Productos">Productos </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Restaurante">Restaurante</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Nuestro_Equipo">Nuestro equipo</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--HEADER-->
+    <header class="row align-items-center bienvenida" id="inicio"> <!--la clase bienvenida aplica el efecto parallax-->
+      <div class="col-12">
+        <div class="row">
+          <div class="col-auto mx-auto">
+            <!-- Contenido de la imagen  -->
+            <h1 class="text-center" id="titulo"> Dolce Vita</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam
+              quos
+            </p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam
+              quos
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+    <main class="container"> <!--Contenedor principal con margenes-->
+      <div class="row" id="principal">
+        <div class="col-12 row color1" id="">
+          <div class="col-12 col-md-6 col-lg-12" id="Platos">  <!--Aplicamos las col para cada uno de los dispositivos-->
+            <h2 class="">Platos</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam
+              quos, quaerat repellat ratione voluptas voluptatum sint pariatur.
+              Quidem veniam saepe ex modi facere consectetur nesciunt at,
+              possimus et perspiciatis expedita! Lorem, ipsum dolor sit amet
+              consectetur adipisicing elit. Ullam quos, quaerat repellat ratione
+              voluptas voluptatum sint pariatur. Quidem veniam saepe ex modi
+              facere consectetur nesciunt at, possimus et perspiciatis expedita!
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam
+              quos, quaerat repellat ratione voluptas voluptatum sint pariatur.
+              Quidem veniam saepe ex modi facere consectetur nesciunt at,
+              possimus et perspiciatis expedita!
+            </p>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-12" id="">
+            <img src="img/platos.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="col-12 row color2" id="Productos"><!--Colo1 y 2 cambia el color de fondo-->                  <!--Cambiamos el orden de los divs, En este caso hay 2 dentro, pues en 
+                                                                             en la version tablet primero el 2 y en escritorio primero el 1   -->
+          <div class="col-12 col-md-6 col-lg-12 order-md-2 order-lg-1">
+            <h2>Productos</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam
+              quos, quaerat repellat ratione voluptas voluptatum sint pariatur.
+              Quidem veniam saepe ex modi facere consectetur nesciunt at,
+              possimus et perspiciatis expedita! Lorem, ipsum dolor sit amet
+              consectetur adipisicing elit. Ullam quos, quaerat repellat ratione
+              voluptas voluptatum sint pariatur. Quidem veniam saepe ex modi
+              facere consectetur nesciunt at, possimus et perspiciatis expedita!
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam
+              quos, quaerat repellat ratione voluptas voluptatum sint pariatur.
+              Quidem veniam saepe ex modi facere consectetur nesciunt at,
+              possimus et perspiciatis expedita!
+            </p>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-12 order-md-1 order-lg-2">
+            <img src="img/productos.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="col-12 row color1" id="Restaurante">
+          <div class="col-12 col-md-6 col-lg-12">
+            <h2>Restaurantes </h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam
+              quos, quaerat repellat ratione voluptas voluptatum sint pariatur.
+              Quidem veniam saepe ex modi facere consectetur nesciunt at,
+              possimus et perspiciatis expedita! Lorem, ipsum dolor sit amet
+              consectetur adipisicing elit. Ullam quos, quaerat repellat ratione
+              voluptas voluptatum sint pariatur. Quidem veniam saepe ex modi
+              facere consectetur nesciunt at, possimus et perspiciatis expedita!
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam
+              quos, quaerat repellat ratione voluptas voluptatum sint pariatur.
+              Quidem veniam saepe ex modi facere consectetur nesciunt at,
+              possimus et perspiciatis expedita!
+            </p>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-12">
+            <img src="img/restaurante.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="color2" id="Principal2"> <!--Nuestro Equipo  // Clase Principal2,con animacion -->
+
+        <div class="col-12 " id="Nuestro_Equipo">
+          <h2>Nuestro Equipo</h2>
+        </div>
+
+        <div class="row" id="equipo">
+
+          <div class="col-12 row col-lg-4 " id="">
+
+            <div class="col-12 col-md-6 col-lg-12 " id="">
+              <img src="img/equipo1.jpg" alt="" class="rounded-circle" />
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-12" id="">
+              <h3 class="">Jefe de Cocina</h3>
+            </div>
+
+          </div>
+
+          <div class="col-12 row col-lg-4" id="">
+
+            <div class="col-12 col-md-6 col-lg-12 ">
+              <img src="img/equipo2.jpg" alt="" class="rounded-circle " /> <!--Clase para redondear la imagen (Boostrap)-->
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-12">
+              <h3>Pinche de cocina</h3>
+            </div>
+
+          </div>
+
+          <div class="col-12 row col-lg-4" id="">
+
+            <div class="col-12 col-md-6 col-lg-12">
+              <img src="img/equipo3.jpg" alt="" class="rounded-circle" />
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-12">
+              <h3>Chef </h3>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class=" container-fluid row" id="Contacto">
+      <div class="col-12 col-md-6">
+        <img src="img/mapa.png" alt="">
+      </div>
+
+      <div class="col-12 col-md-6">
+        <h2>Informacion de Contacto</h2>
+        <p>LOREM IPSIUM HOLA</p>
+        <p>LOREM IPSIUM HOLA</p>
+        <p>LOREM IPSIUM HOLA</p>
+        <p>LOREM IPSIUM HOLA</p>
+
+      </div>
+    </footer>
+  
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@media screen and (max-width: 575px) {
+  /* xs  extra pequeño*/
+  #principal p {
+    text-align: justify;
+    width: 90%;
+  }
+  #principal img {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 576px) {
+  /* sm movil */
+  #principal p {
+    text-align: justify;
+    width: 90%;
+  }
+  #principal img {
+    width: 100%;
+  }
+  footer {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 768px) {
+  /* md tablet*/
+  #principal p {
+    text-align: justify;
+    width: 90%;
+  }
+  #principal img {
+    width: 90%;
+    align-content: center;
+  }
+  footer {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 992px) {
+  /* lg escritorio*/
+  #principal p {
+    text-align: center;
+    width: 80%;
+    margin: auto;
+  }
+  #principal h2 {
+    text-align: center;
+  }
+  #principal img {
+    width: 100;
+    height: 300px;
+    margin-left: 100px;
+    float: center;
+  }
+  footer {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* xl */
+}
+#titulo {
+  background-color: rgba(46, 147, 60, 0.5);
+}
+
+.bienvenida {
+  background: url(./img/paralax.jpg) no-repeat center;
+  background-size: cover;
+  height: 300px;
+  /* 100vh es 100% de la pantalla del usuario*/
+  overflow: hidden;
+  color: black;
+}
+
+body {
+  font-family: "Raleway";
+  font-size: 1rem;
+  font-weight: 300;
+}
+body h1 {
+  color: #297045;
+  font-weight: 900;
+  font-size: 4rem; /* 200% mayor */
+}
+body h2 {
+  color: #2E933C;
+  font-weight: 700;
+  font-size: 2rem; /* 100% mayor */
+}
+body h3 {
+  color: #297045;
+  font-weight: 500;
+  font-size: 1.5rem; /* 50% mayor */
+}
+
+.container-fluid,
+.row {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+.color1 {
+  background-color: rgba(239, 246, 238, 0.5);
+}
+
+.color2 {
+  background-color: rgba(46, 147, 60, 0.5);
+}
+
+#Principal2 h2 {
+  text-align: center;
+}
+#Principal2 div img {
+  width: 50%;
+  height: 50%;
+}
+#Principal2 div h3 {
+  text-align: center;
+}
+#Principal2 div img:hover {
+  transform: scale(3, 3);
+}
+
+footer {
+  background-color: #E55934;
+}
+footer p {
+  color: white;
+}/*# sourceMappingURL=custom.css.map */

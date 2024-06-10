@@ -1,0 +1,44 @@
+//colores
+$naranja: #E55934;
+$crema: #EFF6EE;
+$verde_claro: #2E933C;
+$verde_medio: #297045;
+$verde_oscuro: #204E4A;
+
+$fondo_h1: rgba(46, 147, 60,0.5);  //opacidad es la "a"
+
+$verdes: ($verde_claro, $verde_medio, $verde_oscuro);
+
+@function verde_aleatorio(){
+    $index: random(length($verdes)); // Obtén un índice aleatorio
+    @return nth($verdes, $index);
+    // @return rgb(0, floor(random(256)), 0);
+    
+}
+
+
+
+//Main
+$contenido_fondo1: #eff6ee;
+$contenido_fondo2: #2e933c;
+
+
+//Fuente cuerpo
+$peso_letra: 300;
+$t_letra: 1rem;
+
+//Fuente titulos
+@mixin titulo($nivel) {
+    @if ($nivel == "h1") {
+        font-weight: 900;
+        font-size: calc($t-letra * 4); /* 200% mayor */
+    } @else if ($nivel == "h2") {
+        font-weight: 700;
+        font-size: calc($t-letra * 2); /* 100% mayor */
+    } @else if ($nivel == "h3") {
+        font-weight: 500;
+        font-size: calc($t-letra * 1.5); /* 50% mayor */
+    }
+
+}
+ 
